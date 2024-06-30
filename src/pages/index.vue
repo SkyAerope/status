@@ -15,29 +15,29 @@
 				class="rounded-lg shadow"
 				type="info"
 			>
-				请稍后...
+				等一下下...
 			</n-alert>
 			<n-alert
 				v-if="uptime_data.monitors && allok"
-				title="恭喜"
+				title="好耶"
 				class="rounded-lg shadow"
 				type="success"
 			>
-				当前服务器都运行正常
+				服务器一切正常
 			</n-alert>
 			<n-alert
 				v-if="uptime_data && !allok"
-				title="注意"
+				title="坏了"
 				class="rounded-lg shadow"
 				type="warning"
 			>
-				当前有服务器宕机，请注意
+				有服务器宕机了
 			</n-alert>
 		</div>
 		<div class="col-span-12 flex flex-col gap-2 overflow-hidden md:col-span-8">
 			<div>
 				最新备份状态
-				<span class="text-[0.6rem]">——致那些年失去的博客数据 :(</span>
+				<!-- <span class="text-[0.6rem]">——致那些年失去的博客数据 :(</span> -->
 			</div>
 			<div
 				class="border border-gray-200 rounded-lg bg-white px-6 shadow dark:border-gray-700 dark:bg-gray-800"
